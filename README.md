@@ -1,5 +1,5 @@
 # Tic-Tac-Toe
-An unbeatable game of Tic Tac Toe. The AI uses a tweaked Alpha Beta Pruning algorithm for the decision making.
+An unbeatable game of Tic Tac Toe. The AI uses a tweaked <a href="https://en.wikipedia.org/wiki/Alpha%E2%80%93beta_pruning">Alpha-Beta Pruning</a> algorithm for the decision making.
 
 # Gameplay
 
@@ -29,7 +29,7 @@ Console mode does not support Player vs. Player.
 
 # What I Learned
 
-Vanilla Alpha Beta Pruning sometimes leads to unexpected results such as the following:
+Vanilla Alpha-Beta Pruning sometimes leads to unexpected results such as the following:
 
 ![alt-tag] (gifs/AB_pruning_vanilla.gif)
 
