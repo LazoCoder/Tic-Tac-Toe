@@ -29,6 +29,8 @@ Console mode does not support Player vs. Player.
 
 # What I Learned
 
+## Alpha-Beta Pruning has a "Flaw"
+
 Vanilla Alpha-Beta Pruning sometimes leads to unexpected results such as the following:
 
 ![alt-tag] (gifs/AB_pruning_vanilla.gif)
@@ -42,3 +44,7 @@ The following is what the tweaked Alpha-Beta Pruning algorithm does:
 ![alt-tag] (gifs/AB_pruning_tweaked.gif)
 
 As you can tell, this time it chooses the path of quickest victory.
+
+## Computation & Speed
+
+When using a regular MiniMax algorithm the AI checks **59,704** possible board combinations for its first move (this number obviously decreases throughout the game as less cells are available). The Alpha-Beta Pruning on the other hand brings this number down to **2,337**. Adding the tweak that I mentioned above brings the number up slightly to **2,787**. This increase is miniscule in comparison to the advantages that the algorithm brings to the table.
