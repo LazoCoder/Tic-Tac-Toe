@@ -45,6 +45,6 @@ The following is what the tweaked Alpha-Beta Pruning algorithm does:
 
 As you can tell, this time it chooses the path of quickest victory.
 
-## Computation & Speed
+## Quantity of Boards Evaluated
 
 When using a regular MiniMax algorithm the AI checks **59,704** possible board combinations for its first move (this number obviously decreases throughout the game as less cells are available). The Alpha-Beta Pruning on the other hand brings this number down to **2,337**. Adding the tweak that I mentioned above brings the number up slightly to **2,787**. This increase is miniscule in comparison to the advantages that the algorithm brings to the table.
