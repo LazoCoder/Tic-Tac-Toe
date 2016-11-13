@@ -1,0 +1,50 @@
+MiniMax:
+    - on a 3x3 board
+        - it goes up to a max ply of 8 (this is the max for Tic Tac Toe)
+        - The following are the results after I placed the first move at index 0
+        - 8 ply -> 59,704 possibilities checked
+        - 7 ply -> 45,736 possibilities checked
+        - 6 ply -> 24,424 possibilities checked
+        - 5 ply ->  8,080 possibilities checked
+        - 4 ply ->  2,080 possibilities checked
+        - 3 ply ->    400 possibilities checked
+        - 2 ply ->     64 possibilities checked
+        - 1 ply ->      8 possibilities checked
+        - It seems that 6 ply is the lowest it can go and still have a perfect game
+    - on a 4x4 board
+        - it goes up to a max depth of 15 (but too slow to make any moves)
+
+Alpha Beta Pruning on MiniMax
+    - on a 3x3 board
+        - it goes up to a max ply of 8 (this is the max for Tic Tac Toe)
+        - The following are the results after I placed the first move at index 0
+        - 8 ply ->  2,337 possibilities checked
+        - 7 ply ->  1,879 possibilities checked
+        - 6 ply ->  1,185 possibilities checked
+        - 5 ply ->    460 possibilities checked
+        - 4 ply ->    217 possibilities checked
+        - 3 ply ->     76 possibilities checked
+        - 2 ply ->     22 possibilities checked
+        - 1 ply ->      8 possibilities checked
+    - on a 4x4 board
+            - it goes up to a max depth of 15
+            - takes about 20 seconds to make a the 1st move (65,959,807 possibilities checked)
+            - takes about 2 seconds for the 2nd move (2,472,634 possibilities checked)
+            - instantaneous response for the 3rd move (70,424 possibilities checked)
+            - 4th move (18,539 possibilities checked)
+            - 5th move (2,512 possibilities checked)
+
+Alpha Beta Pruning on MiniMax (Advanced - accounts for depth in the score)
+    - on a 3x3 board
+        - it goes up to a max ply of 8 (this is the max for Tic Tac Toe)
+        - The following are the results after I placed the first move at index 0
+        - 8 ply ->  2,787 possibilities checked
+        - 7 ply ->  2,240 possibilities checked
+        - 6 ply ->  1,384 possibilities checked
+        - 5 ply ->    460 possibilities checked
+        - 4 ply ->    217 possibilities checked
+        - 3 ply ->     76 possibilities checked
+        - 2 ply ->     22 possibilities checked
+        - 1 ply ->      8 possibilities checked
+    - on a 4x4 board
+            - Not tested as it would take longer than the previous algorithm
