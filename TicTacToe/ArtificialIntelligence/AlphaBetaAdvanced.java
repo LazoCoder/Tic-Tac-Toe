@@ -33,7 +33,7 @@ class AlphaBetaAdvanced {
     static void run (Board.State player, Board board, double maxPly) {
 
         if (maxPly < 1) {
-            throw new IllegalArgumentException("Maximum depth must be greater than 1.");
+            throw new IllegalArgumentException("Maximum depth must be greater than 0.");
         }
 
         AlphaBetaAdvanced.maxPly = maxPly;
