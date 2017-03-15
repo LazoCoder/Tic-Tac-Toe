@@ -5,7 +5,7 @@ An unbeatable game of Tic Tac Toe. The AI uses a tweaked <a href="https://en.wik
 
 The AI cannot be defeated. Every game either ends in a draw or the AI winning.
 
-![alt-tag] (gifs/sample_game.gif)
+![alt-tag](gifs/sample_game.gif)
 
 # What I Learned
 
@@ -13,7 +13,7 @@ The AI cannot be defeated. Every game either ends in a draw or the AI winning.
 
 Vanilla Alpha-Beta Pruning sometimes leads to unexpected results such as the following:
 
-![alt-tag] (gifs/AB_pruning_vanilla.gif)
+![alt-tag](gifs/AB_pruning_vanilla.gif)
 
 You can see in the above gif that the AI could have won by playing an *O* in the bottom left corner but it instead chose the middle cell in the first column. This may seem a little strange but no matter what move I choose afterwards, it still wins.
 
@@ -21,7 +21,7 @@ What I found was that even though Alpha-Beta Pruning based AI plays perfect game
 
 The following is what the tweaked Alpha-Beta Pruning algorithm does:
 
-![alt-tag] (gifs/AB_pruning_tweaked.gif)
+![alt-tag](gifs/AB_pruning_tweaked.gif)
 
 As you can tell, this time it chooses the path of quickest victory.
 
@@ -45,6 +45,6 @@ java TicTacToe.Console
 ```
 The console version takes in the player input by index. This means that to select position (1, 1), the index would be 4 since it is the 5th square but we are using zero based indexing.
 
-![alt-tag] (gifs/sample_game_console.png)
+![alt-tag](gifs/sample_game_console.png)
 
 Console mode does not support Player vs. Player.
